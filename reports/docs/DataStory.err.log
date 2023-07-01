@@ -39,6 +39,6 @@ Here is a preview of the cell contents:
 -------------------
 ['import pandas as pd', 'import csv', 'import matplotlib.patches as mpatches', 'import matplotlib.pyplot as plt', 'import plotly.express as px']
 ...
-['!pip install pandas', '!pip install matplotlib', '!pip install -U seaborn', '!pip install seaborn', '!pip install csv']
+['%pip install pandas', '%pip install matplotlib', '%pip install -U seaborn', '%pip install seaborn', '%pip install csv']
 -------------------
 
