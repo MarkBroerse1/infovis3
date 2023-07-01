@@ -1,0 +1,1094 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Introduction: &#8212; Jupyter Book Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/DataStory';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Example Notebook" href="notebook.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="home.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Book Template</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="home.html">
+                    Jupyter Book Tutorial
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebook.html">Example Notebook</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction:</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/yenchiah/jupyter-book-template/blob/main/docs/docs/DataStory.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/yenchiah/jupyter-book-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/yenchiah/jupyter-book-template/issues/new?title=Issue%20on%20page%20%2Fdocs/DataStory.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/DataStory.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction:</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction:</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-and-preprocessing">DATASET AND PREPROCESSING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#does-a-good-education-give-government-trust">Does a good education give government trust?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#happiness-score-by-continent">happiness score by continent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-the-relationship-between-happiness-and-socioeconomic-factors">Exploring the Relationship Between Happiness and Socioeconomic Factors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gni-per-capita-and-happiness">GNI per capita and happiness</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gni-and-happiness-trend">GNI and happiness trend</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-makes-people-happy">What makes people happy?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-distribution">work distribution</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="introduction">
+<h1>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<p>In the ever-evolving landscape of world demographics it is paramount to be aware of trends and factors that influence the way humans experience and live their lives. Factors such as life expectancy, education and the source of happiness for different people in different countries determines the way people pursue happines and impact their environment around them.</p>
+<p>HDI gives us a fairly objective look into the quality of life within a country, thus we can use this measure to compare key indicators of quality of life and plot them with the happiness felt within a country, we can also fraw conclusions as to what aspects of life would create happiness for citizens of a country.</p>
+<p>One of our perspectives is that the richer a country and population is, the higher their education, the longer their lifespan and the happier a population will be. We will look for relations between a country’s GNI and and their general quality of life indices.</p>
+<p>A different and somewhat opposing perspective on our data is that a population wealth does not strictly correlate to their happiness, especially above a certain treshold of wealth. To this end we will try to look between correlations between countries with similiar geographic and cultural settings but different economic outlooks.</p>
+<p>This is the story of that data and the conclusions we can draw from the graphics.</p>
+<hr class="docutils" />
+</section>
+<section id="dataset-and-preprocessing">
+<h1>DATASET AND PREPROCESSING<a class="headerlink" href="#dataset-and-preprocessing" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">matplotlib.patches</span> <span class="k">as</span> <span class="nn">mpatches</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">plotly.subplots</span> <span class="kn">import</span> <span class="n">make_subplots</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+
+
+<span class="c1"># !pip install numpy</span>
+<span class="c1"># !pip install plotly</span>
+<span class="c1"># !pip install pandas</span>
+<span class="c1"># !pip install matplotlib</span>
+<span class="c1"># !pip install -U seaborn</span>
+<span class="c1"># !pip install seaborn</span>
+<span class="c1"># !pip install csv</span>
+<span class="c1"># !pip install statsmodels</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">11</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="ne">---&gt; </span><span class="mi">11</span> <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="c1"># !pip install numpy</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="c1"># !pip install plotly</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="c1"># !pip install pandas</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="c1"># !pip install csv</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="c1"># !pip install statsmodels</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;statsmodels&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id1">
+<h2><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;full_data.csv&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">df</span>
+
+<span class="c1"># print(df.head(n=5)) # Print the first 5 rows of the dataframe</span>
+
+
+<span class="n">df_1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;full_data.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># selects the columns to get the mean</span>
+<span class="n">columns_to_mean</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Education_Index&#39;</span><span class="p">,</span> <span class="s1">&#39;government_trust&#39;</span><span class="p">,</span> <span class="s1">&#39;cpi_score&#39;</span><span class="p">,</span> <span class="s1">&#39;gdp_per_capita&#39;</span><span class="p">,</span> <span class="s1">&#39;freedom&#39;</span><span class="p">,</span> <span class="s1">&#39;happiness_score&#39;</span><span class="p">,</span> <span class="s1">&#39;health&#39;</span><span class="p">]</span>
+
+<span class="n">df_mean</span> <span class="o">=</span> <span class="n">df_1</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">)[</span><span class="n">columns_to_mean</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="c1"># Reset the index to convert &#39;country&#39; from the index to a regular column</span>
+<span class="n">df_mean</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_mean</span> <span class="o">=</span> <span class="n">df_mean</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">df_mean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_mean</span><span class="p">,</span> <span class="n">df_1</span><span class="p">[[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="s1">&#39;continent&#39;</span><span class="p">]],</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
+
+<span class="c1"># Display the mean DataFrame</span>
+<span class="c1"># print(df_mean)</span>
+
+<span class="n">df_mean</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;mean_data.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For this project two datasets are used to form one dataset that contains the variables of both using the datapoints they share. The first dataset used can be found on <a class="reference external" href="https://www.kaggle.com/datasets/unsdsn/world-happiness">https://www.kaggle.com/datasets/unsdsn/world-happiness</a>, this dataset contains information on some scales aimed to measure the happiness of countries in the world. This dataset contains information of countries from 2015 to 2019. The variables in this dataset are Country, which just marks down the countries in the dataset, Year, which just notes the year where the data was measured. The relevant variables are:</p>
+<ul class="simple">
+<li><p>happiness_score, which measures the happiness scores of each country obtained from the Gallup World Poll.</p></li>
+<li><p>gdp_per_capita, which describes to what extent GDP per capita contributes to a country’s happiness.</p></li>
+<li><p>family, which describes to what extent family factors contribute to a country’s happiness.</p></li>
+<li><p>health, which describes to what extent health factors contribute to a country’s happiness.</p></li>
+<li><p>freedom, which describes to what extent freedom factors contribute to a country’s happiness.</p></li>
+<li><p>generosity, which describes to what extent generosity contributes to a country’s happiness.</p></li>
+<li><p>government_trust, which describes to what extent trust in the government contributes to a country’s happiness.</p></li>
+<li><p>dystopia_residual, which describes the unknown factors of a hypothetical ‘worst’ country (we will not use this  data, because it is not relevant for our purposes).</p></li>
+<li><p>social_support, which describes to what extent social support contributes to a country’s happiness.</p></li>
+<li><p>cpi_scores, which measures the perceived corruption of a country.</p></li>
+</ul>
+<p>The second dataset can be found on #link moet hier nog#. This dataset was originally published in Portuguese, so it had to be translated before it could be used. This dataset contains data on most countries of the world from 1990 to 2018. Apart from Country and year this dataset contains the following variables:</p>
+<ul class="simple">
+<li><p>Life expectancy at birth, which measures how old people from a certain country are expected to become when born.</p></li>
+<li><p>Expected years of schooling, which measures the expected duration of schooling people from a certain counrty will get.</p></li>
+<li><p>Average years of schooling, which measures the average years of schooling of people from that country at that time.</p></li>
+<li><p>GNI per capita (PPP), which measures the Gross National income adjusted for purchasing power of a country.</p></li>
+<li><p>Life expectancy index, this is a normalized verison of life expectancy to make it easier to compare the life expectancies of countries.</p></li>
+<li><p>Education index, this is used to measure the quality of education compared to other countries.</p></li>
+<li><p>GNI index, this measures the GNI per capita compared to other countries.</p></li>
+<li><p>HDI, this is the Human development index, which is a measure to assess the develpmont of a country.</p></li>
+</ul>
+<p>These two datasets were then combined to create the final dataset. This dataset contains all variables of both datasets for the years 2015 to 2018, as these were the 4 years that both datasets had in common. This dataset could then be used to make data visualizations to help visualizing both perspectives of the story.</p>
+<hr class="docutils" />
+<p>ANALYSIS OF THE DATA</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># Convert data to a DataFrame</span>
+
+<span class="n">fig1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">locations</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;happiness_score&#39;</span><span class="p">,</span>
+                           <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s2">&quot;Viridis&quot;</span><span class="p">,</span>
+                           <span class="n">locationmode</span> <span class="o">=</span> <span class="s1">&#39;country names&#39;</span><span class="p">,</span>
+                           <span class="n">animation_frame</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="n">animation_group</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+                           <span class="n">projection</span> <span class="o">=</span> <span class="s2">&quot;natural earth&quot;</span><span class="p">,</span>
+                          <span class="p">)</span>
+<span class="n">fig2</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">locations</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;Education_Index&#39;</span><span class="p">,</span>
+                           <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s2">&quot;Viridis&quot;</span><span class="p">,</span>
+                           <span class="n">locationmode</span> <span class="o">=</span> <span class="s1">&#39;country names&#39;</span><span class="p">,</span>
+                           <span class="n">animation_frame</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="n">animation_group</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+                           <span class="n">projection</span> <span class="o">=</span> <span class="s2">&quot;natural earth&quot;</span><span class="p">,</span>
+                          <span class="p">)</span>
+
+<span class="n">fig3</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">locations</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;Life_expectancy_at_birth&#39;</span><span class="p">,</span>
+                           <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s2">&quot;Viridis&quot;</span><span class="p">,</span>
+                           <span class="n">locationmode</span> <span class="o">=</span> <span class="s1">&#39;country names&#39;</span><span class="p">,</span>
+                           <span class="n">animation_frame</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="n">animation_group</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+                           <span class="n">projection</span> <span class="o">=</span> <span class="s2">&quot;natural earth&quot;</span><span class="p">,</span>
+                          <span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">600</span><span class="p">,</span>  <span class="n">title</span><span class="o">=</span><span class="s1">&#39;World map of Happiness&#39;</span><span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">600</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;World map of Education index&#39;</span><span class="p">)</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig3</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">},</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">600</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;World map of Life expectancy at birth&#39;</span><span class="p">)</span>
+<span class="n">fig3</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<blockquote>
+<div><p><em>Figure 1: Happiness, Education and life expectancy index between the years 2015 - 2018</em></p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Scatterplot using plotly Express</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_3d</span><span class="p">(</span><span class="n">df_mean</span><span class="p">,</span>
+                    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Education_Index&#39;</span><span class="p">,</span>
+                    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;government_trust&#39;</span><span class="p">,</span>
+                    <span class="n">z</span><span class="o">=</span><span class="s1">&#39;cpi_score&#39;</span><span class="p">,</span>
+                    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>
+                    <span class="n">size</span><span class="o">=</span><span class="s1">&#39;gdp_per_capita&#39;</span><span class="p">,</span>
+                    <span class="n">opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                    <span class="n">size_max</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span>
+                    <span class="n">height</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
+                    <span class="n">hover_data</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">])</span>
+
+<span class="c1"># Customize the layoutt</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">scene</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Education Index&#39;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Government Trust&#39;</span><span class="p">,</span>
+    <span class="n">zaxis_title</span><span class="o">=</span><span class="s1">&#39;CPI Score&#39;</span>
+<span class="p">))</span>
+
+<span class="c1"># Makes Title </span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="s1">&#39;Education, Government trust, and CPI&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.45</span><span class="p">,</span>
+        <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span>
+        <span class="s1">&#39;xanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;yanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;top&#39;</span>
+    <span class="p">},</span>
+    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">20</span>
+<span class="p">)</span>
+<span class="c1"># Show the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<blockquote>
+<div><p><em>Figure 2: Multivariate 3D-scatterplot giving education, government trust and CPI (Corruption perception index</em>)</p>
+</div></blockquote>
+</section>
+<section id="does-a-good-education-give-government-trust">
+<h2>Does a good education give government trust?<a class="headerlink" href="#does-a-good-education-give-government-trust" title="Permalink to this heading">#</a></h2>
+<p>This 3d Scatter Plot which is shown in figure 2 is multivariate and shows on the x-axis the ‘Education Index’, on the y-axis the ‘Government Trust’ and on the z-axis the ‘CPI Score’. CPI stands for ‘Corruption Perception Index’, the lower the CPI index, the more the people believe there is corruption in their country. The size of the plot-points shows the GDP per capita.</p>
+<p>The 3D scatter plot reveals interesting insights about the correlation between the Corruption Perception Index (CPI) score and other variables across countries. A positive correlation between the CPI score and variables such as Education Index and Government trust suggests that countries with higher levels of corruption tend to exhibit lower values in education, government trust, and economic prosperity. Conversely, a negative correlation indicates that countries with lower corruption levels tend to have higher education indices and greater levels of government trust. This visualization highlights the importance of addressing corruption to foster positive development in education and trust within countries.</p>
+<p>The Education Index plays a significant role in shaping the relationships between various variables across countries and continents. A positive correlation between the Education Index and variables such as Government trust, GDP per capita, and possibly the Corruption Perception Index suggests that countries with higher education indices tend to exhibit greater levels of government trust and economic prosperity while combating corruption. Furthermore, the Education Index may influence the disparities observed between countries and continents. Nations with higher education indices are more likely to invest in quality education, leading to better governance, higher economic output, and potentially lower corruption levels. Thus, enhancing education systems becomes vital for promoting positive development and reducing inequality among countries and continents.</p>
+<p>Overall it gives the visualisation that countries with a higher inducation index tend to have more goverment trust and a higher CPI score. This is probaply because people that live in a country that is able to give a good education tend to trust the goverment more than people that don’t recieved good education.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">continent_scores</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;full_data.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+        <span class="n">continent</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;continent&#39;</span><span class="p">]</span>
+        <span class="n">country</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span>
+        <span class="n">year</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span>
+        <span class="n">happiness_score</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;happiness_score&#39;</span><span class="p">])</span>
+        <span class="n">continent_scores</span><span class="p">[</span><span class="n">continent</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">country</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">happiness_score</span><span class="p">))</span>
+
+
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+
+<span class="n">palette</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">&quot;deep&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">continent_scores</span><span class="p">))</span>
+
+
+<span class="n">country_heights</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">continent</span><span class="p">,</span> <span class="n">scores</span> <span class="ow">in</span> <span class="n">continent_scores</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">heights</span> <span class="o">=</span> <span class="p">[</span><span class="n">score</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">scores</span><span class="p">]</span>
+    <span class="n">country_heights</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">heights</span><span class="p">)</span>
+
+
+<span class="n">bars</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">country_heights</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">continent_scores</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span> <span class="n">color</span><span class="o">=</span><span class="n">palette</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+<span class="n">legend_patches</span> <span class="o">=</span> <span class="p">[</span><span class="n">mpatches</span><span class="o">.</span><span class="n">Patch</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">palette</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">continent</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">continent</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">continent_scores</span><span class="o">.</span><span class="n">keys</span><span class="p">())]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="o">=</span><span class="n">legend_patches</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper right&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="s1">&#39;small&#39;</span><span class="p">)</span>
+
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gcf</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">hover</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">bars</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">rect</span> <span class="ow">in</span> <span class="n">container</span><span class="p">:</span>
+            <span class="n">cont</span><span class="p">,</span> <span class="n">ind</span> <span class="o">=</span> <span class="n">rect</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">cont</span><span class="p">:</span>
+                <span class="n">heights</span> <span class="o">=</span> <span class="p">[</span><span class="n">height</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span> <span class="k">for</span> <span class="n">height</span> <span class="ow">in</span> <span class="n">container</span><span class="p">]</span>
+                <span class="n">countries</span> <span class="o">=</span> <span class="p">[</span><span class="n">country</span> <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">continent_scores</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+                <span class="n">bins</span> <span class="o">=</span> <span class="n">bars</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">bin_width</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">bins</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">index</span> <span class="o">=</span> <span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ind&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">x</span> <span class="o">=</span> <span class="n">bars</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">index</span><span class="p">]</span> <span class="o">+</span> <span class="n">bin_width</span> <span class="o">/</span> <span class="mi">2</span>
+                <span class="n">y</span> <span class="o">=</span> <span class="n">heights</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+                <span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">countries</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">y</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">),</span>
+                             <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+                             <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">))</span>
+                <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw_idle</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Happiness Score&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Count&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Stacked Histogram of Happiness Scores by Continent&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/1dac48d3671975e2bd2359bb6ec786f3eb8104d81d0de965f51dd07bbacc78b3.png" src="../_images/1dac48d3671975e2bd2359bb6ec786f3eb8104d81d0de965f51dd07bbacc78b3.png" />
+</div>
+</div>
+<blockquote>
+<div><p><em>Figure 3: Histogram showing happiness per continent</em></p>
+</div></blockquote>
+</section>
+<section id="happiness-score-by-continent">
+<h2>happiness score by continent<a class="headerlink" href="#happiness-score-by-continent" title="Permalink to this heading">#</a></h2>
+<p>The graph above in figure 3 shows us the amount of countries that are within a certain rounded score of happiness, the happiness is rounded to the nearest integer. As we can see African countries are the lowest on the scale of happiness while western countries are near the top of the distribution. Interesting to note is that while South american countries are poorer and less developed compared to western or Asian countries, their happiness is above what would be expected of their demographic metrics. Further relations in the world happiness dataset need to be drawn to conclude what causes such happiness has outside of income or education. The factors for happiness in these countries will be analyzed later in this notebook to gain an insight into the true factors of happiness.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_mean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;mean_data.csv&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">,</span> <span class="n">x4</span> <span class="o">=</span> <span class="n">data_mean</span><span class="p">[</span><span class="s1">&#39;gdp_per_capita&#39;</span><span class="p">],</span> <span class="n">data_mean</span><span class="p">[</span><span class="s1">&#39;Education_Index&#39;</span><span class="p">],</span> <span class="n">data_mean</span><span class="p">[</span><span class="s1">&#39;health&#39;</span><span class="p">],</span> <span class="n">data_mean</span><span class="p">[</span><span class="s1">&#39;freedom&#39;</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">data_mean</span><span class="p">[</span><span class="s1">&#39;happiness_score&#39;</span><span class="p">]</span>
+<span class="n">countries</span> <span class="o">=</span> <span class="n">data_mean</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span>
+<span class="n">continents</span> <span class="o">=</span> <span class="n">data_mean</span><span class="p">[</span><span class="s1">&#39;continent&#39;</span><span class="p">]</span>
+
+<span class="c1"># Add traces for all four scatter plots</span>
+<span class="n">scatter_trace_1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x1</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;markers&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">countries</span><span class="p">,</span>
+    <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;Country: %</span><span class="si">{text}</span><span class="s2">&lt;br&gt;Happiness: %</span><span class="si">{y:.2f}</span><span class="s2">&lt;extra&gt;&lt;/extra&gt;&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;GDP&quot;</span>
+<span class="p">)</span>
+<span class="n">scatter_trace_2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x2</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;markers&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">countries</span><span class="p">,</span>
+    <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;Country: %</span><span class="si">{text}</span><span class="s2">&lt;br&gt;Happiness: %</span><span class="si">{y:.2f}</span><span class="s2">&lt;extra&gt;&lt;/extra&gt;&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Education&quot;</span>
+<span class="p">)</span>
+<span class="n">scatter_trace_3</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x3</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;markers&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">countries</span><span class="p">,</span>
+    <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;Country: %</span><span class="si">{text}</span><span class="s2">&lt;br&gt;Happiness: %</span><span class="si">{y:.2f}</span><span class="s2">&lt;extra&gt;&lt;/extra&gt;&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Health&quot;</span>
+<span class="p">)</span>
+<span class="n">scatter_trace_4</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x4</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;markers&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">countries</span><span class="p">,</span>
+    <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;Country: %</span><span class="si">{text}</span><span class="s2">&lt;br&gt;Happiness: %</span><span class="si">{y:.2f}</span><span class="s2">&lt;extra&gt;&lt;/extra&gt;&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Freedom&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">scatter_trace_1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">scatter_trace_2</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">scatter_trace_3</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">scatter_trace_4</span><span class="p">)</span>
+
+<span class="c1"># Calculate and add trend lines</span>
+<span class="n">trend_line_1</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x1</span><span class="p">))</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x1</span><span class="p">))</span>
+<span class="n">trend_line_2</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x2</span><span class="p">))</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x2</span><span class="p">))</span>
+<span class="n">trend_line_3</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x3</span><span class="p">))</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x3</span><span class="p">))</span>
+<span class="n">trend_line_4</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x4</span><span class="p">))</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">x4</span><span class="p">))</span>
+
+<span class="c1"># Add trend lines for all four scatter plots</span>
+<span class="n">trend_line_trace_1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x1</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">trend_line_1</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;lines&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Relationship between GDP per capita and Happiness Score&quot;</span>
+<span class="p">)</span>
+<span class="n">trend_line_trace_2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x2</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">trend_line_2</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;lines&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Relationship between Education Index and Happiness Score&quot;</span>
+<span class="p">)</span>
+<span class="n">trend_line_trace_3</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x3</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">trend_line_3</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;lines&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Relationship between Health Index and Happiness Score&quot;</span>
+<span class="p">)</span>
+<span class="n">trend_line_trace_4</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x4</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">trend_line_4</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;lines&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Relationship between Freedom Index and Happiness Score&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">trend_line_trace_1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">trend_line_trace_2</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">trend_line_trace_3</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">trend_line_trace_4</span><span class="p">)</span>
+
+<span class="c1"># Define button options</span>
+<span class="n">buttons</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;GDP&#39;</span><span class="p">,</span> <span class="s1">&#39;method&#39;</span><span class="p">:</span> <span class="s1">&#39;update&#39;</span><span class="p">,</span> <span class="s1">&#39;args&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;visible&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">]},</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;GDP &amp; Happiness&#39;</span><span class="p">}]},</span>
+    <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Education&#39;</span><span class="p">,</span> <span class="s1">&#39;method&#39;</span><span class="p">:</span> <span class="s1">&#39;update&#39;</span><span class="p">,</span> <span class="s1">&#39;args&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;visible&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">]},</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Education &amp; Happiness&#39;</span><span class="p">}]},</span>
+    <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Health&#39;</span><span class="p">,</span> <span class="s1">&#39;method&#39;</span><span class="p">:</span> <span class="s1">&#39;update&#39;</span><span class="p">,</span> <span class="s1">&#39;args&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;visible&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]},</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Health &amp; Happiness&#39;</span><span class="p">}]},</span>
+    <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Freedom&#39;</span><span class="p">,</span> <span class="s1">&#39;method&#39;</span><span class="p">:</span> <span class="s1">&#39;update&#39;</span><span class="p">,</span> <span class="s1">&#39;args&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;visible&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]},</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Freedom &amp; Happiness&#39;</span><span class="p">}]}</span>
+<span class="p">]</span>
+
+<span class="c1"># Create updatemenus</span>
+<span class="n">updatemenus</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;buttons&#39;</span><span class="p">:</span> <span class="n">buttons</span><span class="p">,</span> <span class="s1">&#39;direction&#39;</span><span class="p">:</span> <span class="s1">&#39;down&#39;</span><span class="p">,</span> <span class="s1">&#39;showactive&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}]</span>
+
+<span class="c1"># Update layout with updatemenus</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;Select Variable in dropdown menu&quot;</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">900</span><span class="p">,</span>
+    <span class="n">updatemenus</span><span class="o">=</span><span class="n">updatemenus</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<blockquote>
+<div><p><em>Figure 4: Scatterplot showing the relations between different factors and happiness</em></p>
+</div></blockquote>
+</section>
+<section id="exploring-the-relationship-between-happiness-and-socioeconomic-factors">
+<h2>Exploring the Relationship Between Happiness and Socioeconomic Factors<a class="headerlink" href="#exploring-the-relationship-between-happiness-and-socioeconomic-factors" title="Permalink to this heading">#</a></h2>
+<p>Figure 4 shows visualizations to explore the correlations between these factors and happiness. We took the mean for each country between the years 2015 till 2018 so each scatterplot is a visualisation between four years. The x-axis of each plot represents a specific socioeconomic factor (GDP per capita, education index, health index, and freedom index), while the y-axis represents the happiness score.  With the button in the top left corner you can change the graph and look at each factor separately. To provide further insights, we also added trendlines to the scatter plots. These trend lines were calculated using the Ordinary Least Squares (OLS) method from the Statsmodels library. The trendlines helped us identify the overall trend and direction of the relationship between these socioeconomic factors and happiness for each country.</p>
+<p>By visualizing the data in this manner, we were abled to observe any potential patterns or associations between the socioeconomic factors and happiness. The scatter plots allowed us to compare the relationships across these different factors and gain a better understanding of how they contribute to the total happiness.</p>
+<p>In conclusion, this data visualization project provided valuable insights into the complex interplay between happiness and socioeconomic factors, highlighting the importance of factors such as GDP per capita, education, health, and freedom in determining happiness levels on all the countries in a global scale.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">continent_colors</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Africa&#39;</span><span class="p">:</span> <span class="s1">&#39;#AEFD8E&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Asia&#39;</span><span class="p">:</span> <span class="s1">&#39;#FAA598&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Europe&#39;</span><span class="p">:</span> <span class="s1">&#39;#E3C97F&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;North America&#39;</span><span class="p">:</span> <span class="s1">&#39;#B47FE3&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Australia&#39;</span><span class="p">:</span> <span class="s1">&#39;#B2E4FA&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;South America&#39;</span><span class="p">:</span> <span class="s1">&#39;#E8EAC8&#39;</span>
+<span class="p">}</span>
+
+<span class="n">avg_happiness</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">])[</span><span class="s1">&#39;happiness_score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Create a grouped histogram using Plotly</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">avg_happiness</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;happiness_score&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span> <span class="n">barmode</span><span class="o">=</span><span class="s1">&#39;group&#39;</span><span class="p">,</span>
+                   <span class="n">color_discrete_map</span><span class="o">=</span><span class="n">continent_colors</span><span class="p">)</span>
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Development of Average Happiness Score by Continent&#39;</span><span class="p">,</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Average Happiness&#39;</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">),</span>
+    <span class="n">legend</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">)),</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;rgb(240, 240, 240)&#39;</span><span class="p">,</span>
+    <span class="n">bargap</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="p">)</span>
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">)</span>
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)))</span>
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">avg_gni</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">])[</span><span class="s1">&#39;GNI_per_capita_PPP&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Create a grouped histogram using Plotly</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">avg_gni</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;GNI_per_capita_PPP&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span> <span class="n">barmode</span><span class="o">=</span><span class="s1">&#39;group&#39;</span><span class="p">,</span>
+                   <span class="n">color_discrete_map</span><span class="o">=</span><span class="n">continent_colors</span><span class="p">)</span>
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Development of GNI per capita (PPP) by Continent&#39;</span><span class="p">,</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Average contribution&#39;</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">),</span>
+    <span class="n">legend</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">)),</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;rgb(240, 240, 240)&#39;</span><span class="p">,</span>
+    <span class="n">bargap</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="p">)</span>
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">)</span>
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)))</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<blockquote>
+<div><p><em>Figure 5: Barplot showing the development in happiness and GNI</em></p>
+</div></blockquote>
+</section>
+<section id="gni-per-capita-and-happiness">
+<h2>GNI per capita and happiness<a class="headerlink" href="#gni-per-capita-and-happiness" title="Permalink to this heading">#</a></h2>
+<p>The two histograms shown above in figure 5 show that more money does not necessarily relate to being happier. For both GNI per capita and happiness the top three continents are consistent, these being in order: Australia, North America and Europe. However, the order of the bottom three continents is not consistent, while asia is, on average, significantly ‘richer’ than than South America, their happiness levels are lower in every single year, showing that, at least for South Americans, money does not buy happiness. Furthermore, these histograms show that while GNI per capita varies from year to year, the happiness of continents stays very consistent throughout the years, which also proves that the monetary wealth of people does not have the greatest influence on people’s happiness.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Create a scatter plot for all available years using Plotly, with two plots per row</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;happiness_score&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;GNI_per_capita_PPP&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>
+                 <span class="n">color_discrete_map</span><span class="o">=</span><span class="n">continent_colors</span><span class="p">,</span> <span class="n">hover_data</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">],</span> <span class="n">animation_frame</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="n">animation_group</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+           <span class="n">log_x</span><span class="o">=</span><span class="kc">True</span><span class="p">,)</span>
+
+<span class="c1"># Set the plot title and axis labels</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Scatter Plot of GNI per Capita (PPP) vs Happiness by Year&#39;</span><span class="p">,</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Happiness score&#39;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;GNI per Capita (PPP)&#39;</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>  
+    <span class="n">width</span> <span class="o">=</span> <span class="mi">800</span><span class="p">,</span>
+    <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;rgb(240, 240, 240, 240)&#39;</span>
+<span class="p">)</span>
+
+<span class="c1"># Set the hover label format</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">hovertemplate</span><span class="o">=</span><span class="s1">&#39;Country: %</span><span class="si">{customdata[0]}</span><span class="s1">&lt;br&gt;Happines: %</span><span class="si">{x}</span><span class="s1">&lt;br&gt;GNI per Capita (PPP): %</span><span class="si">{y}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<blockquote>
+<div><p><em>Figure 6: interactive scatterplot showing the GNI and Happiness per year</em></p>
+</div></blockquote>
+</section>
+<section id="gni-and-happiness-trend">
+<h2>GNI and happiness trend<a class="headerlink" href="#gni-and-happiness-trend" title="Permalink to this heading">#</a></h2>
+<p>While these scatterplots in figure 6 show that having a ‘richer’ population (measured with GNI_per_capita adjusted for PPP) is generally related with having a happier population. These scatterplots also show that countries with a poorer population can still have happier population. This is exemplified by the fact that a country like Mexico has a much poorer population than a country like Singapore (which has by far the richest population) while their happiness scores are pretty much equal to each other. Furthermore, these scatterplots show that most countries move stronger along the x-axis than along the y-axis, this means that countries can become happier or unhappier regardless of the economic wealth of their citizens. Kuwait, however shows the exact opposite side of this phenomenon, they show great growth in their GNI per capita while their happiness scores do not increase or decrease drastically.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;full_data.csv&#39;</span><span class="p">)</span>
+
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;gdp_per_capita&#39;</span><span class="p">,</span> <span class="s1">&#39;family&#39;</span><span class="p">,</span> <span class="s1">&#39;health&#39;</span><span class="p">,</span> <span class="s1">&#39;freedom&#39;</span><span class="p">,</span> <span class="s1">&#39;generosity&#39;</span><span class="p">,</span> <span class="s1">&#39;government_trust&#39;</span><span class="p">,</span> <span class="s1">&#39;social_support&#39;</span><span class="p">]</span>
+
+<span class="n">main_source_happiness</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">)[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">maxhappy</span> <span class="o">=</span> <span class="n">main_source_happiness</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">maxhappyy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Country&#39;</span><span class="p">:</span> <span class="n">maxhappy</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;Max&#39;</span><span class="p">:</span> <span class="n">maxhappy</span><span class="o">.</span><span class="n">values</span><span class="p">})</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span><span class="n">maxhappyy</span><span class="p">,</span>
+                    <span class="n">locations</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+                    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;Max&quot;</span><span class="p">,</span>
+                    <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+                    <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s1">&#39;Plasma&#39;</span><span class="p">,</span>
+                    <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Max&#39;</span><span class="p">:</span> <span class="s1">&#39;Max Score&#39;</span><span class="p">},</span>
+                    <span class="n">featureidkey</span><span class="o">=</span><span class="s1">&#39;properties.name&#39;</span><span class="p">,</span>
+                    <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;natural earth&#39;</span><span class="p">,</span>
+                    <span class="n">height</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
+                    <span class="n">locationmode</span> <span class="o">=</span> <span class="s1">&#39;country names&#39;</span><span class="p">,</span>
+                    <span class="p">)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<blockquote>
+<div><p><em>Figure 7: Most important factor contributing to happiness per country</em></p>
+</div></blockquote>
+</section>
+<section id="what-makes-people-happy">
+<h2>What makes people happy?<a class="headerlink" href="#what-makes-people-happy" title="Permalink to this heading">#</a></h2>
+<p>Figure 7 shown above gives a overview of the world map. The figure shows which factor contributes the most to the happiness of each country. What is prominent in this visualisation is that for most countries GDP per Capita is not the most important contributor to happiness, which defends perspective that money is not the most important factor for happiness. This figure also shows that family is the most important factor in African and East-Asian countries, where as in European and American countries social support or GDP per Capita are the biggest contributors</p>
+</section>
+<hr class="docutils" />
+<section id="reflection">
+<h2>Reflection<a class="headerlink" href="#reflection" title="Permalink to this heading">#</a></h2>
+<p>During this assignment, we engaged in a collaborative effort to analyze and visualize the data. Originally we were in a group of four but one guy didn’t show up or respond to any of our messages, so at the end we worked in a group of three. In the end we didn’t have a problem with the missing person as we were perfectly able to do the group project with the three of us. We worked together to clean and transform the datasets, ensuring the accuracy and reliability of our visualizations. This process required attention to detail and problem-solving skills as we encountered challenges such as missing values and outliers. Using Pandas, we manipulated and reshaped the data to uncover insights. We experimented with different chart types, colors, and layouts to present our findings effectively. Through bar plots, line plots, 3d-scatter plots and much more, we showcased the relationship between happiness scores, GDP per capita and a lot of other correlated subjects.</p>
+<p>During our exploration, we made intriguing observations and encountered unexpected patterns. We delved deeper into the data, conducting additional research to understand the factors contributing to these deviations. Incorporating contextual information, we provided a comprehensive interpretation of the data, enriching our visualizations. Working as a group allowed us to leverage each other’s strengths and learn from one another. We collaborated on data preprocessing, visualization techniques, and interpretation, fostering our technical and analytical skills. We discovered the power of data storytelling and its ability to convey insights in a compelling manner.</p>
+<p>This assignment was a valuable learning experience for our group. It deepened our understanding of data analysis and visualization while highlighting the importance of collaboration and teamwork. Moving forward, we will continue to refine our skills and explore new opportunities to apply data-driven approaches in solving real-world problems.</p>
+</section>
+<hr class="docutils" />
+<section id="work-distribution">
+<h2>work distribution<a class="headerlink" href="#work-distribution" title="Permalink to this heading">#</a></h2>
+<p>At the end we all had a good contribution to the final product, except for Martijn, he didn’t show up or responed to any of our messages. Everybody wrote code for the visualisations and the corresponding data explanation. Mark did the figures …, Joep did the figures … and Jasper did the figures …. We also helped eachother finding solutions to problems we faced and couldn’t solve them ourselves. We found ourselves in a good work environment and we learned a lot from eachother.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="notebook.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Example Notebook</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction:</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-and-preprocessing">DATASET AND PREPROCESSING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#does-a-good-education-give-government-trust">Does a good education give government trust?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#happiness-score-by-continent">happiness score by continent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-the-relationship-between-happiness-and-socioeconomic-factors">Exploring the Relationship Between Happiness and Socioeconomic Factors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gni-per-capita-and-happiness">GNI per capita and happiness</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gni-and-happiness-trend">GNI and happiness trend</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-makes-people-happy">What makes people happy?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-distribution">work distribution</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Yen-Chia Hsu
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
